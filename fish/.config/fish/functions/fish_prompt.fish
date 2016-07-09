@@ -1,0 +1,1 @@
+/home/gabriell/.local/share/omf/themes/uai/fish_prompt.fish

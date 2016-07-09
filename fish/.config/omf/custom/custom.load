@@ -1,4 +1,5 @@
 
+set -x EDITOR vim
 # set -x PAGER /usr/local/bin/most
 set -x GREP_OPTIONS --color=auto
 set -x GREP_COLOR "4;33"
