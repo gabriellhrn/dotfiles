@@ -4,6 +4,8 @@
 "  -----------------------------------
 "
 
+execute pathogen#infect()
+
 " Mudar o shell para não bugar no fish
 set shell=/bin/sh
 
