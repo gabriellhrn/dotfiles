@@ -1,25 +1,8 @@
 
 set -x EDITOR vim
-# set -x PAGER /usr/local/bin/most
 set -x GREP_OPTIONS --color=auto
 set -x GREP_COLOR "4;33"
 set -x CLICOLOR auto
 
-set -x ORACLE_HOME /Applications/oracle/product/instantclient_64/11.2.0.4.0
-set -x DYLD_LIBRARY_PATH $ORACLE_HOME/lib
-
-alias curl-brew "/usr/local/opt/curl/bin/curl"
-alias bee "/opt/bee/bin/bee"
-alias dm "/usr/local/bin/docker-machine"
-alias dcp "/usr/local/bin/docker-compose"
-
-alias bsapps "watch -n 30 --color 'python /Users/gabriell/Projects/Bluesoft/ec2-deploy/datadog/metrics/applications.py'"
-alias bserps "watch -n 60 --color 'python /Users/gabriell/Projects/Bluesoft/ec2-deploy/datadog/metrics/check-erp-status.py'"
-
-alias bee-dev "/Users/gabriell/Projects/local/bin/bee-dev/bee/bin/bee"
-
-alias st2sp "perl strut-to-spring.pl"
-alias htop "sudo htop"
-
-# /usr/local/bin/fortune | /usr/local/bin/cowsay
+eval (/usr/bin/perl -I/home/gabriellhrn/perl5/lib/perl5 -Mlocal::lib)
 
