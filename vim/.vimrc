@@ -21,6 +21,8 @@ set number
 " Pra quando digitar muito rapido
 cab W w
 cab Q q
+cab Qa qa
+cab QA qa
 cab Wq wq
 cab WQ wq
 cab Wqa wqa
