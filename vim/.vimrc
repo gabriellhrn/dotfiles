@@ -23,6 +23,9 @@ cab W w
 cab Q q
 cab Wq wq
 cab WQ wq
+cab Wqa wqa
+cab WQa wqa
+cab WQA wqa
 
 set wildmenu
 
@@ -51,6 +54,8 @@ match ExtraWhitespace /\s\+$/
 
 " Show me a ruler
 set ruler
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Enable indentation matching for =>'s
 filetype plugin indent on
