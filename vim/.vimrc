@@ -6,19 +6,19 @@
 
 execute pathogen#infect()
 
-" Mudar o shell para não bugar no fish
+" change shell so we don't bug fish
 set shell=/bin/sh
 
-" Altera o 'tabeamento' do vim
+" change tabs to spaces
 set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 
-" Número de linha
-set number
+" show line number
+set nu
 
-" Pra quando digitar muito rapido
+" for when I type really fast
 cab W w
 cab Q q
 cab Qa qa
@@ -53,9 +53,6 @@ highlight LiteralTabs ctermbg=darkgreen guibg=darkgreen
 match LiteralTabs /\s\  /
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$/
-
-" Show me a ruler
-set ruler
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
