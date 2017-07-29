@@ -42,8 +42,8 @@ set modeline
 
 syntax on
 
-" colorscheme monokai
-" set background=light
+colorscheme elflord
+set background=dark
 
 " set default comment color to cyan instead of darkblue
 " which is not very legible on a black background
