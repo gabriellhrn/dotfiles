@@ -7,5 +7,5 @@ set -gx OMF_CONFIG "/home/gabriell/.config/omf/custom"
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
-eval (/usr/bin/perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
+# eval (/usr/bin/perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
