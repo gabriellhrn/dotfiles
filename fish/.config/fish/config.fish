@@ -1,11 +1,9 @@
-# Path to Oh My Fish install.
-set -gx OMF_PATH "/home/gabriell/.local/share/omf"
 
-# Customize Oh My Fish configuration path.
-set -gx OMF_CONFIG "/home/gabriell/.config/omf/custom"
+set -x EDITOR vim
+set -x GREP_OPTIONS --color=auto
+set -x GREP_COLOR "4;33"
+set -x CLICOLOR auto
 
-# Load oh-my-fish configuration.
-source $OMF_PATH/init.fish
-
-# eval (/usr/bin/perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
+eval (python -m virtualfish compat_aliases)
+eval (/usr/bin/perl -I/home/gabriellhrn/perl5/lib/perl5 -Mlocal::lib)
 
