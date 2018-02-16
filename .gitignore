@@ -1,3 +1,4 @@
 **/fish_history
 *.swp
 *.swo
+vim/.vim/.netrwhist
