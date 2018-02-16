@@ -59,6 +59,12 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Enable indentation matching for =>'s
 filetype plugin indent on
 
+" Open file where left off
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+        \| exe "normal! g'\"" | endif
+endif
+
 " vim-gitgutter
 set updatetime=250
 "let g:gitgutter_sign_added = '·'
@@ -67,3 +73,5 @@ set updatetime=250
 "let g:gitgutter_sign_removed_first_line = '·'
 "let g:gitgutter_sign_modified_removed = '·'
 
+" fzf
+set rtp+=~/.fzf
