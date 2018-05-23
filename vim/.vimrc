@@ -31,8 +31,6 @@ cab WQA wqa
 
 set wildmenu
 
-" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
 " turn off auto adding comments on next line
 " so you can cut and paste reliably
 " http://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
@@ -67,11 +65,6 @@ endif
 
 " vim-gitgutter
 set updatetime=250
-"let g:gitgutter_sign_added = '·'
-"let g:gitgutter_sign_modified = '·'
-"let g:gitgutter_sign_removed = '·'
-"let g:gitgutter_sign_removed_first_line = '·'
-"let g:gitgutter_sign_modified_removed = '·'
 
 " fzf
 set rtp+=~/.fzf
