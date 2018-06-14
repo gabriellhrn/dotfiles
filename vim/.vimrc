@@ -4,7 +4,33 @@
 "  -----------------------------------
 "
 
-execute pathogen#infect()
+" required for Vundle
+set nocompatible
+filetype off
+
+" include Vundle and initialize it
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage itself (required)
+Plugin 'VundleVim/Vundle.vim'
+
+" initialize plugins using Vundle
+Plugin 'rodjek/vim-puppet'
+Plugin 'hashivim/vim-terraform'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'fatih/vim-go'
+Plugin 'dikiaap/minimalist'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'w0rp/ale'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+call vundle#end()
+filetype plugin indent on
 
 " change shell so we don't bug fish
 set shell=/bin/sh
@@ -35,7 +61,6 @@ set wildmenu
 " so you can cut and paste reliably
 " http://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
 set fo=tcq
-set nocompatible
 set modeline
 
 syntax on
@@ -54,9 +79,6 @@ match ExtraWhitespace /\s\+$/
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-" Enable indentation matching for =>'s
-filetype plugin indent on
-
 " Open file where left off
 if has("autocmd")
     au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -68,3 +90,7 @@ set updatetime=250
 
 " fzf
 set rtp+=~/.fzf
+
+" vim-airline
+let g:airline_theme='bubblegum'
+
