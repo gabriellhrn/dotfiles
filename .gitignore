@@ -2,3 +2,4 @@
 *.swp
 *.swo
 vim/.vim/.netrwhist
+vim/.vim/bundle/*
