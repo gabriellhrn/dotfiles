@@ -16,18 +16,22 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " initialize plugins using Vundle
-Plugin 'rodjek/vim-puppet'
-Plugin 'hashivim/vim-terraform'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'fatih/vim-go'
-Plugin 'dikiaap/minimalist'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'w0rp/ale'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dikiaap/minimalist'
+Plugin 'fatih/vim-go'
+Plugin 'hashivim/vim-terraform'
+Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'rust-lang/rust.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'w0rp/ale'
+Plugin 'xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 filetype plugin indent on
@@ -94,3 +98,14 @@ set rtp+=~/.fzf
 " vim-airline
 let g:airline_theme='bubblegum'
 
+set backspace=2
+
+" Open NERDTree with C-n
+map <C-n> :NERDTreeToggle<CR>
+
+" Use ag instead of ack when it exists
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
+
+nmap <F8> :TagbarToggle<CR>
